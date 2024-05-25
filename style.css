@@ -1,0 +1,139 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #222;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    padding: 20px 0;
+}
+
+.card {
+    width: 25rem;
+    background: linear-gradient(135deg, #00feba, #5b548a);
+    padding: 30px 50px;
+    border-radius: 40px;
+}
+
+.search {
+    width: 100%;
+    display: flex;
+}
+
+.search input {
+    width: 250px;
+    height: 60px;
+    border: none;
+    outline-color: #00feba;
+    outline-offset: -2px;
+    background-color: #ebfffc;
+    color: #555;
+    padding: 0 0 0 80px;
+    height: 60px;
+    border-radius: 40px;
+    flex: 1;
+    margin-right: 16px;
+    font-size: 18px;
+    transition: 350ms;
+    font-family: monospace;
+}
+.search input:focus {
+    box-shadow: 0px 0px 30px #00feba;
+}
+.search button {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    border: none;
+    font-size: 32px;
+    color: #5b548a;
+    transition: 350ms;
+    position: absolute;
+}
+.search button:hover {
+    box-shadow: 0px 0px 30px #00feba;
+}
+.weather {
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 30px 0;
+}
+.weather-icon {
+    width: 170px;
+}
+.weather h1 {
+    font-size: 80px;
+    font-weight: 400;
+    color: #fff;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.weather h2 {
+    font-size: 45px;
+    font-weight: 400;
+    color: #fff;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.details {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20px;
+    margin-top: 50px;
+}
+.col {
+    display: flex;
+    align-items: center;
+}
+.col img {
+    width: 50px;
+    height: 50px;
+}
+.col p {
+    font-size: 18px;
+    padding: 0 5px;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: #fff;
+}
+
+@media screen and (max-width: 426px) {
+    .search input {
+        width: 150px;
+        height: 40px;
+        margin: 0;
+        padding-left: 50px;
+    }
+    .search button {
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        border: none;
+        font-size: 18px;
+    }
+    .card {
+        width: 25rem;
+        background: linear-gradient(135deg, #00feba, #5b548a);
+        padding: 15px 25px;
+        border-radius: 40px;
+    }
+    .weather h1 {
+        font-size: 50px;
+    }
+    .weather h2 {
+        font-size: 25px;
+    }
+    .weather-icon {
+        width: 100px;
+    }
+    .details {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+}
